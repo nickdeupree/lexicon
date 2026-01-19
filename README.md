@@ -1,73 +1,82 @@
-# React + TypeScript + Vite
+# Lexicon 📖
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Lexicon is a modern, high-performance web application designed to enhance your reading experience. Whether you want to blast through articles using Rapid Serial Visual Presentation (RSVP) or listen to text with natural-sounding voices, Lexicon has you covered.
 
-Currently, two official plugins are available:
+![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![React](https://img.shields.io/badge/React-19-blue.svg)
+![Tailwind](https://img.shields.io/badge/Tailwind-4-blue.svg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+### ⚡ Rapid Speed Reader (RSVP)
+Train your brain to read faster by focusing on one word at a time.
+- **Dynamic WPM**: Adjust reading speed from 10 to 1000 words per minute.
+- **Interactive Controls**: Click to adjust speed or toggle playback (Left: slow down, Right: speed up, Middle: play/pause).
+- **Smart Scaling**: Font sizes automatically adjust for long words to prevent overflow on mobile.
+- **Progress Tracking**: Visual indicators show exactly where you are in the text.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🎙️ Natural Text-to-Speech
+Rest your eyes and listen to your favorite content.
+- **Multi-Voice Support**: Choose from a wide variety of system-provided natural voices.
+- **Adjustable Rate**: Listen at your own pace with configurable playback speed.
+- **Intuitive Controls**: Easy-to-use play, pause, resume, and stop functionality.
 
-## Expanding the ESLint configuration
+### 📱 Modern & Accessible
+- **PWA Ready**: Install Lexicon as a standalone app on your mobile or desktop.
+- **Dark Mode**: Automatically defaults to your system's light or dark mode setting.
+- **Fully Responsive**: Optimized for every screen size, from mobile phones to high-res monitors.
+- **Clean UI**: Built with Radix UI and Tailwind CSS for a premium, accessible experience.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Framework**: [React 19](https://react.dev/)
+- **Type Safety**: [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **UI Components**: [Radix UI](https://www.radix-ui.com/) & [Lucide Icons](https://lucide.dev/)
+- **Routing**: [React Router 7](https://reactrouter.com/)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Prerequisites
+- Node.js (Latest LTS recommended)
+- npm or pnpm
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/lexicon.git
+   cd lexicon
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+### Scripts
+- `npm run dev`: Start development server.
+- `npm run build`: Build the production-ready application.
+- `npm run lint`: Run ESLint to ensure code quality.
+- `npm run preview`: Preview the production build locally.
+
+## 📖 Usage
+
+1. **Paste**: Copy any text you want to read and paste it into the Reader or Speed Reader input.
+2. **Configure**: Adjust the WPM or select a voice that suits your preference.
+3. **Read**: Hit Play and start consuming content more efficiently!
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Built with ❤️ by [Antigravity](https://github.com/antigravity)
