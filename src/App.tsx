@@ -6,7 +6,7 @@ import Speed from "@/pages/Speed";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<RootLayout />}>
           <Route path="reader" element={<Reader />} />
